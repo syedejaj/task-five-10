@@ -21,15 +21,16 @@
     <header class="bg-pink-100 sticky top-0">
         <!-- navbar starts -->
         <nav class="container mx-auto p-7">
-            <div class="flex justify-between">
-                <a class="bg-green-400 font-bold py-1 px-3 lg:py-3 lg:px-5 rounded-lg" href="blog.html">Blog</a>
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-1">
+                <a class="bg-green-400 font-bold py-1 px-3 lg:py-3 lg:px-5 rounded-lg text-center"
+                    href="blog.html">Blog</a>
                 <div class="flex items-center gap-3">
                     <img src="images/logo.png" alt="">
                     <h3 class="font-semibold text-sm lg:text-2xl">Donate Bangladesh</h3>
                 </div>
                 <div class="flex items-center gap-2">
                     <img src="images/coin.png" alt="">
-                    <span class="text-sm lg:text-lg font-bold">5500</span>
+                    <span class="text-sm lg:text-lg font-bold" id="account-balance">5500</span>
                     <span class="text-sm lg:text-lg font-bold">BDT</span>
                 </div>
             </div>
@@ -38,7 +39,7 @@
     </header>
     <main class="container mx-auto">
         <section class="mt-10">
-            <div class="flex gap-5 justify-center sticky top-28">
+            <div class="flex gap-5 justify-center sticky top-36 lg:top-28">
                 <button id="donation-button"
                     class="bg-green-400 font-bold py-1 px-3 lg:py-3 lg:px-8 rounded-lg">Donation</button>
                 <button id="history-button"
@@ -50,13 +51,13 @@
                     class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3">
                     <!-- image  -->
                     <div>
-                        <img class="w-3/4" src="images/feni.png" alt="">
+                        <img class="w-full" src="images/feni.png" alt="">
                     </div>
                     <!-- text content  -->
                     <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
-                            <span class="text-xl font-bold">120</span>
+                            <span id="noakhali-account" class="text-xl font-bold">120</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -64,9 +65,9 @@
                             donation will help provide essential supplies and to those affected by this disaster. Every
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts and making a positive impact on the lives of those in need.</p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="noakhali-input" type="text" autocomplete="off" placeholder="Write Donation Amount"
                             class="border rounded-lg border-gray-400 py-3 px-2">
-                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                        <button id="noakhali-button" class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
                     </div>
 
                 </div>
@@ -75,13 +76,13 @@
                     class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-3/4" src="images/noakhali.png" alt="">
+                        <img class="w-full" src="images/noakhali.png" alt="">
                     </div>
                     <!-- text content  -->
                     <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
-                            <span class="text-xl font-bold">340</span>
+                            <span id="feni-account" class="text-xl font-bold">340</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -91,9 +92,9 @@
                             crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
                             counts towards making a real difference. Please consider donating today to assist those in
                             urgent need.</p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input type="text" id="feni-input" placeholder="Write Donation Amount"
                             class="border rounded-lg border-gray-400 py-3 px-2">
-                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                        <button id="feni-button" class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
                     </div>
 
                 </div>
@@ -102,13 +103,13 @@
                     class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-3/4" src="images/quota-protest.png" alt="">
+                        <img class="w-full" src="images/quota-protest.png" alt="">
                     </div>
                     <!-- text content  -->
                     <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
-                            <span class="text-xl font-bold">100</span>
+                            <span id="qouta-account" class="text-xl font-bold">100</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h3>
@@ -119,9 +120,9 @@
                             donation plays a vital role in alleviating their suffering and aiding in their recovery.
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input type="text" id="qouta-input" placeholder="Write Donation Amount"
                             class="border rounded-lg border-gray-400 py-3 px-2">
-                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                        <button id="qouta-button" class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
                     </div>
 
                 </div>
@@ -130,13 +131,13 @@
                     class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-3/4" src="images/sylhet.webp" alt="">
+                        <img class="w-full" src="images/sylhet.webp" alt="">
                     </div>
                     <!-- text content  -->
                     <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
-                            <span class="text-xl font-bold">100</span>
+                            <span id="sylhet-account" class="text-xl font-bold">100</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Sylhet Flood is in Danger</h3>
@@ -147,9 +148,9 @@
                             donation plays a vital role in alleviating their suffering and aiding in their recovery.
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input type="text" id="sylhet-input" placeholder="Write Donation Amount"
                             class="border rounded-lg border-gray-400 py-3 px-2">
-                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                        <button id="sylhet-button" class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
                     </div>
                 </div>
                 <!-- card-5  -->
@@ -157,13 +158,13 @@
                     class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-3/4" src="images/Moulvibazar.webp" alt="">
+                        <img class="w-full" src="images/Moulvibazar.webp" alt="">
                     </div>
                     <!-- text content  -->
                     <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
-                            <span class="text-xl font-bold">270</span>
+                            <span id="moulvibazar-account" class="text-xl font-bold">270</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Moulvibazar Flood Situation</h3>
@@ -174,22 +175,27 @@
                             donation plays a vital role in alleviating their suffering and aiding in their recovery.
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input type="text" id="moulvibazar-input" placeholder="Write Donation Amount"
                             class="border rounded-lg border-gray-400 py-3 px-2">
-                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                        <button id="moulvibazar-button" class="bg-green-400 font-bold py-4 rounded-lg">Donate
+                            Now</button>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section id="history-section" class="hidden">
+        <section id="history-section" class="hidden mt-8">
 
-            <h1>History Container</h1>
+            <h1 class="text-center text-2xl font-extrabold">Transaction History</h1>
+            <div id="history-container">
+
+            </div>
 
         </section>
     </main>
 
 
+    <script src="js/utilities.js"></script>
     <script src="js/home.js"></script>
 </body>
 
