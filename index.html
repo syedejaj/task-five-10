@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font awesome cdn -->
     <script src="https://kit.fontawesome.com/31923ad50f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
         <!-- navbar starts -->
         <nav class="container mx-auto p-7">
             <div class="flex justify-between">
-                <button class="bg-green-400 font-bold py-1 px-3 lg:py-3 lg:px-5 rounded-lg">Blog</button>
+                <a class="bg-green-400 font-bold py-1 px-3 lg:py-3 lg:px-5 rounded-lg" href="blog.html">Blog</a>
                 <div class="flex items-center gap-3">
                     <img src="images/logo.png" alt="">
                     <h3 class="font-semibold text-sm lg:text-2xl">Donate Bangladesh</h3>
@@ -46,13 +47,13 @@
             <div id="cards" class="mt-10">
                 <!-- card-1  -->
                 <div
-                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 justify-center items-center border rounded-lg border-gray-200 p-3">
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3">
                     <!-- image  -->
                     <div>
-                        <img class="w-full" src="images/feni.png" alt="">
+                        <img class="w-3/4" src="images/feni.png" alt="">
                     </div>
                     <!-- text content  -->
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
                             <span class="text-xl font-bold">120</span>
@@ -71,13 +72,13 @@
                 </div>
                 <!-- card-2  -->
                 <div
-                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-full" src="images/noakhali.png" alt="">
+                        <img class="w-3/4" src="images/noakhali.png" alt="">
                     </div>
                     <!-- text content  -->
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
                             <span class="text-xl font-bold">340</span>
@@ -98,19 +99,74 @@
                 </div>
                 <!-- card-3  -->
                 <div
-                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
                     <!-- image  -->
                     <div>
-                        <img class="w-full" src="images/quota-protest.png" alt="">
+                        <img class="w-3/4" src="images/quota-protest.png" alt="">
                     </div>
                     <!-- text content  -->
-                    <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-5">
                         <div class="flex items-center gap-1">
                             <img src="images/coin.png" alt="">
                             <span class="text-xl font-bold">100</span>
                             <span class="text-xl font-bold">BDT</span>
                         </div>
                         <h3 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h3>
+                        <p> The recent Quota movement has resulted in numerous injuries and significant hardship for
+                            many individuals. Your support is crucial in providing medical assistance, rehabilitation,
+                            and necessary supplies to those affected. By contributing, you help ensure that injured
+                            individuals receive the care and support they need during this challenging time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                            Please consider making a donation to support these brave individuals in their time of need.
+                        </p>
+                        <input type="text" placeholder="Write Donation Amount"
+                            class="border rounded-lg border-gray-400 py-3 px-2">
+                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                    </div>
+
+                </div>
+                <!-- card-4  -->
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
+                    <!-- image  -->
+                    <div>
+                        <img class="w-3/4" src="images/sylhet.webp" alt="">
+                    </div>
+                    <!-- text content  -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-1">
+                            <img src="images/coin.png" alt="">
+                            <span class="text-xl font-bold">100</span>
+                            <span class="text-xl font-bold">BDT</span>
+                        </div>
+                        <h3 class="text-2xl font-bold">Sylhet Flood is in Danger</h3>
+                        <p> The recent Quota movement has resulted in numerous injuries and significant hardship for
+                            many individuals. Your support is crucial in providing medical assistance, rehabilitation,
+                            and necessary supplies to those affected. By contributing, you help ensure that injured
+                            individuals receive the care and support they need during this challenging time. Every
+                            donation plays a vital role in alleviating their suffering and aiding in their recovery.
+                            Please consider making a donation to support these brave individuals in their time of need.
+                        </p>
+                        <input type="text" placeholder="Write Donation Amount"
+                            class="border rounded-lg border-gray-400 py-3 px-2">
+                        <button class="bg-green-400 font-bold py-4 rounded-lg">Donate Now</button>
+                    </div>
+                </div>
+                <!-- card-5  -->
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-3 justify-center items-center border rounded-lg border-gray-200 p-3 mt-5">
+                    <!-- image  -->
+                    <div>
+                        <img class="w-3/4" src="images/Moulvibazar.webp" alt="">
+                    </div>
+                    <!-- text content  -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-1">
+                            <img src="images/coin.png" alt="">
+                            <span class="text-xl font-bold">270</span>
+                            <span class="text-xl font-bold">BDT</span>
+                        </div>
+                        <h3 class="text-2xl font-bold">Moulvibazar Flood Situation</h3>
                         <p> The recent Quota movement has resulted in numerous injuries and significant hardship for
                             many individuals. Your support is crucial in providing medical assistance, rehabilitation,
                             and necessary supplies to those affected. By contributing, you help ensure that injured
